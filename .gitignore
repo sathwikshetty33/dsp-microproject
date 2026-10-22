@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Bulky regenerable synthetic records (tens of MB); the aggregated
+# results tables and the report are small enough to keep.
+outputs/data/L*_*.csv

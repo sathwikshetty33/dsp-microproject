@@ -1,0 +1,876 @@
+{
+  "L0": {
+    "posture": {
+      "level": 0,
+      "name": "Transparent baseline",
+      "blurb": "Plain public ledger. Addresses reused, all FL metadata in the clear.",
+      "fresh_address_rate": 0.05,
+      "coinjoin_rate": 0.0,
+      "coinjoin_anonymity_set": 1,
+      "generalise_metadata": false,
+      "suppression_k": 1,
+      "dp_noise_multiplier": 0.0,
+      "dp_count_epsilon": null,
+      "hide_update_metadata": false
+    },
+    "naive_cluster": {
+      "n_addresses": 415,
+      "n_clusters": 203,
+      "collapse_ratio": 0.5108433734939759,
+      "purity": 1.0,
+      "adjusted_rand": 0.9269545851323944,
+      "adjusted_mutual_info": 0.9407942324717647,
+      "false_merge_rate": 0.0,
+      "entity_recovery_rate": 1.0,
+      "largest_cluster_share": 0.01927710843373494,
+      "value_attributed": 0.999092554352072,
+      "attribution_precision": 1.0
+    },
+    "competent_cluster": {
+      "n_addresses": 415,
+      "n_clusters": 203,
+      "collapse_ratio": 0.5108433734939759,
+      "purity": 1.0,
+      "adjusted_rand": 0.9269545851323944,
+      "adjusted_mutual_info": 0.9407942324717647,
+      "false_merge_rate": 0.0,
+      "entity_recovery_rate": 1.0,
+      "largest_cluster_share": 0.01927710843373494,
+      "value_attributed": 0.999092554352072,
+      "attribution_precision": 1.0
+    },
+    "advanced_cluster": {
+      "n_addresses": 415,
+      "n_clusters": 203,
+      "collapse_ratio": 0.5108433734939759,
+      "purity": 1.0,
+      "adjusted_rand": 0.9269545851323944,
+      "adjusted_mutual_info": 0.9407942324717647,
+      "false_merge_rate": 0.0,
+      "entity_recovery_rate": 1.0,
+      "largest_cluster_share": 0.01927710843373494,
+      "value_attributed": 0.9990925543520721,
+      "attribution_precision": 1.0
+    },
+    "linkage": {
+      "n_coinjoins": 0,
+      "n_attacked": 0,
+      "n_change_outputs": 0,
+      "n_uniquely_solved": 0,
+      "solve_rate": 0.0,
+      "inputs_relinked": 0,
+      "precision": 0.0
+    },
+    "reidentification": {
+      "n_participants": 83,
+      "published_qis": [
+        "region",
+        "org_size",
+        "volume_band",
+        "top_model"
+      ],
+      "dropped_qis": [],
+      "reid_declared_only": 0.891566265060241,
+      "reid_with_timestamps": 0.9759036144578314,
+      "timestamp_uplift": 0.08433734939759041,
+      "k_declared": {
+        "n_records": 83,
+        "min_k": 1.0,
+        "median_k": 1.0,
+        "mean_k": 1.144578313253012,
+        "unique_fraction": 0.891566265060241,
+        "below_5_fraction": 1.0,
+        "anonymity_entropy_bits": 0.12957695785739118,
+        "suppression_rate": 0.0
+      },
+      "k_combined": {
+        "n_records": 83,
+        "min_k": 1.0,
+        "median_k": 1.0,
+        "mean_k": 1.0240963855421688,
+        "unique_fraction": 0.9759036144578314,
+        "below_5_fraction": 1.0,
+        "anonymity_entropy_bits": 0.024096385542168676,
+        "suppression_rate": 0.0
+      },
+      "unicity": {
+        "1": 0.0025,
+        "2": 0.185,
+        "3": 0.665,
+        "4": 0.925,
+        "5": 0.98
+      }
+    },
+    "membership": {
+      "attack_available": true,
+      "n_clients_attacked": 16,
+      "mean_auc": 0.7073272344058968,
+      "max_auc": 0.8778395701762653,
+      "mean_advantage": 0.41664620918640344,
+      "tpr_at_1pct_fpr": 0.014012738853503185,
+      "global_model_auc": 0.6001932915917256,
+      "per_client_auc": [
+        0.7303086523865745,
+        0.5237895589064465,
+        0.5323625957410992,
+        0.709926314571197,
+        0.7843153211805555,
+        0.8131121927768764,
+        0.6269267065114816,
+        0.7516642011834319,
+        0.7111836734693877,
+        0.7180834427972729,
+        0.799962469506474,
+        0.8062,
+        0.8778395701762653,
+        0.672677935440104,
+        0.7748170388440608,
+        0.48406607700312176
+      ]
+    },
+    "transparency": {
+      "freerider_detection_auc": 1.0,
+      "poisoning_detection_auc": 0.9642857142857143,
+      "contribution_fidelity": 0.8055964653902798,
+      "payment_traceability": 0.9990925543520721,
+      "supply_conservation": 1.0,
+      "metadata_completeness": 1.0,
+      "audit_capability_index": 0.9555434080522968,
+      "updates_visible": true
+    },
+    "ledger": {
+      "n_transactions": 6000,
+      "n_addresses": 415,
+      "n_entities": 180,
+      "n_coinjoin": 0,
+      "addresses_per_entity": 2.3055555555555554,
+      "total_value": 23540350.027328
+    }
+  },
+  "L1": {
+    "posture": {
+      "level": 1,
+      "name": "Address hygiene",
+      "blurb": "One-time addresses and change rotation; metadata still public.",
+      "fresh_address_rate": 0.85,
+      "coinjoin_rate": 0.0,
+      "coinjoin_anonymity_set": 1,
+      "generalise_metadata": false,
+      "suppression_k": 1,
+      "dp_noise_multiplier": 0.0,
+      "dp_count_epsilon": null,
+      "hide_update_metadata": false
+    },
+    "naive_cluster": {
+      "n_addresses": 4246,
+      "n_clusters": 1065,
+      "collapse_ratio": 0.7491756947715498,
+      "purity": 1.0,
+      "adjusted_rand": 0.7987388346833741,
+      "adjusted_mutual_info": 0.839263797377436,
+      "false_merge_rate": 0.0,
+      "entity_recovery_rate": 0.8166666666666667,
+      "largest_cluster_share": 0.024493641073951956,
+      "value_attributed": 0.9443592887343588,
+      "attribution_precision": 1.0
+    },
+    "competent_cluster": {
+      "n_addresses": 4246,
+      "n_clusters": 1065,
+      "collapse_ratio": 0.7491756947715498,
+      "purity": 1.0,
+      "adjusted_rand": 0.7987388346833741,
+      "adjusted_mutual_info": 0.839263797377436,
+      "false_merge_rate": 0.0,
+      "entity_recovery_rate": 0.8166666666666667,
+      "largest_cluster_share": 0.024493641073951956,
+      "value_attributed": 0.9443592887343588,
+      "attribution_precision": 1.0
+    },
+    "advanced_cluster": {
+      "n_addresses": 4246,
+      "n_clusters": 1065,
+      "collapse_ratio": 0.7491756947715498,
+      "purity": 1.0,
+      "adjusted_rand": 0.7987388346833741,
+      "adjusted_mutual_info": 0.839263797377436,
+      "false_merge_rate": 0.0,
+      "entity_recovery_rate": 0.8166666666666667,
+      "largest_cluster_share": 0.024493641073951956,
+      "value_attributed": 0.9443592887343588,
+      "attribution_precision": 1.0
+    },
+    "linkage": {
+      "n_coinjoins": 0,
+      "n_attacked": 0,
+      "n_change_outputs": 0,
+      "n_uniquely_solved": 0,
+      "solve_rate": 0.0,
+      "inputs_relinked": 0,
+      "precision": 0.0
+    },
+    "reidentification": {
+      "n_participants": 83,
+      "published_qis": [
+        "region",
+        "org_size",
+        "volume_band",
+        "top_model"
+      ],
+      "dropped_qis": [],
+      "reid_declared_only": 0.891566265060241,
+      "reid_with_timestamps": 0.9759036144578314,
+      "timestamp_uplift": 0.08433734939759041,
+      "k_declared": {
+        "n_records": 83,
+        "min_k": 1.0,
+        "median_k": 1.0,
+        "mean_k": 1.144578313253012,
+        "unique_fraction": 0.891566265060241,
+        "below_5_fraction": 1.0,
+        "anonymity_entropy_bits": 0.12957695785739118,
+        "suppression_rate": 0.0
+      },
+      "k_combined": {
+        "n_records": 83,
+        "min_k": 1.0,
+        "median_k": 1.0,
+        "mean_k": 1.0240963855421688,
+        "unique_fraction": 0.9759036144578314,
+        "below_5_fraction": 1.0,
+        "anonymity_entropy_bits": 0.024096385542168676,
+        "suppression_rate": 0.0
+      },
+      "unicity": {
+        "1": 0.0125,
+        "2": 0.2075,
+        "3": 0.6075,
+        "4": 0.9475,
+        "5": 0.9725
+      }
+    },
+    "membership": {
+      "attack_available": true,
+      "n_clients_attacked": 16,
+      "mean_auc": 0.7073272344058968,
+      "max_auc": 0.8778395701762653,
+      "mean_advantage": 0.41664620918640344,
+      "tpr_at_1pct_fpr": 0.014012738853503185,
+      "global_model_auc": 0.6001932915917256,
+      "per_client_auc": [
+        0.7303086523865745,
+        0.5237895589064465,
+        0.5323625957410992,
+        0.709926314571197,
+        0.7843153211805555,
+        0.8131121927768764,
+        0.6269267065114816,
+        0.7516642011834319,
+        0.7111836734693877,
+        0.7180834427972729,
+        0.799962469506474,
+        0.8062,
+        0.8778395701762653,
+        0.672677935440104,
+        0.7748170388440608,
+        0.48406607700312176
+      ]
+    },
+    "transparency": {
+      "freerider_detection_auc": 1.0,
+      "poisoning_detection_auc": 0.9642857142857143,
+      "contribution_fidelity": 0.8055964653902798,
+      "payment_traceability": 0.9443592887343588,
+      "supply_conservation": 1.0,
+      "metadata_completeness": 1.0,
+      "audit_capability_index": 0.9464211971160111,
+      "updates_visible": true
+    },
+    "ledger": {
+      "n_transactions": 6000,
+      "n_addresses": 4246,
+      "n_entities": 180,
+      "n_coinjoin": 0,
+      "addresses_per_entity": 23.58888888888889,
+      "total_value": 23145770.756839
+    }
+  },
+  "L2": {
+    "posture": {
+      "level": 2,
+      "name": "Hygiene + mixing",
+      "blurb": "Adds CoinJoin-style joint transactions that break input ownership.",
+      "fresh_address_rate": 0.85,
+      "coinjoin_rate": 0.55,
+      "coinjoin_anonymity_set": 6,
+      "generalise_metadata": false,
+      "suppression_k": 1,
+      "dp_noise_multiplier": 0.0,
+      "dp_count_epsilon": null,
+      "hide_update_metadata": false
+    },
+    "naive_cluster": {
+      "n_addresses": 41387,
+      "n_clusters": 2824,
+      "collapse_ratio": 0.9317660134824945,
+      "purity": 0.16698480199096336,
+      "adjusted_rand": 0.0002808168849109137,
+      "adjusted_mutual_info": 0.09571859734861879,
+      "false_merge_rate": 0.4405099150141643,
+      "entity_recovery_rate": 0.005555555555555556,
+      "largest_cluster_share": 0.581148669872182,
+      "value_attributed": 0.6153901971557202,
+      "attribution_precision": 0.025163820869793324
+    },
+    "competent_cluster": {
+      "n_addresses": 41387,
+      "n_clusters": 37579,
+      "collapse_ratio": 0.09200956822190542,
+      "purity": 1.0,
+      "adjusted_rand": 0.01874101117312697,
+      "adjusted_mutual_info": 0.08318618614202342,
+      "false_merge_rate": 0.0,
+      "entity_recovery_rate": 0.0,
+      "largest_cluster_share": 0.0031410829487520235,
+      "value_attributed": 0.13946174365627087,
+      "attribution_precision": 1.0
+    },
+    "advanced_cluster": {
+      "n_addresses": 41387,
+      "n_clusters": 25470,
+      "collapse_ratio": 0.38458936380989195,
+      "purity": 0.9967381061686037,
+      "adjusted_rand": 0.11341113438422203,
+      "adjusted_mutual_info": 0.3208698629119636,
+      "false_merge_rate": 0.0022771888496270123,
+      "entity_recovery_rate": 0.0,
+      "largest_cluster_share": 0.007272815135187378,
+      "value_attributed": 0.3130320215709604,
+      "attribution_precision": 0.9933880737468612
+    },
+    "linkage": {
+      "n_coinjoins": 3268,
+      "n_attacked": 3268,
+      "n_change_outputs": 19608,
+      "n_uniquely_solved": 8676,
+      "solve_rate": 0.4424724602203182,
+      "inputs_relinked": 12622,
+      "precision": 0.9923928077455049
+    },
+    "reidentification": {
+      "n_participants": 83,
+      "published_qis": [
+        "region",
+        "org_size",
+        "volume_band",
+        "top_model"
+      ],
+      "dropped_qis": [],
+      "reid_declared_only": 0.891566265060241,
+      "reid_with_timestamps": 0.9759036144578314,
+      "timestamp_uplift": 0.08433734939759041,
+      "k_declared": {
+        "n_records": 83,
+        "min_k": 1.0,
+        "median_k": 1.0,
+        "mean_k": 1.144578313253012,
+        "unique_fraction": 0.891566265060241,
+        "below_5_fraction": 1.0,
+        "anonymity_entropy_bits": 0.12957695785739118,
+        "suppression_rate": 0.0
+      },
+      "k_combined": {
+        "n_records": 83,
+        "min_k": 1.0,
+        "median_k": 1.0,
+        "mean_k": 1.0240963855421688,
+        "unique_fraction": 0.9759036144578314,
+        "below_5_fraction": 1.0,
+        "anonymity_entropy_bits": 0.024096385542168676,
+        "suppression_rate": 0.0
+      },
+      "unicity": {
+        "1": 0.01,
+        "2": 0.215,
+        "3": 0.645,
+        "4": 0.9275,
+        "5": 0.955
+      }
+    },
+    "membership": {
+      "attack_available": true,
+      "n_clients_attacked": 16,
+      "mean_auc": 0.7073272344058968,
+      "max_auc": 0.8778395701762653,
+      "mean_advantage": 0.41664620918640344,
+      "tpr_at_1pct_fpr": 0.014012738853503185,
+      "global_model_auc": 0.6001932915917256,
+      "per_client_auc": [
+        0.7303086523865745,
+        0.5237895589064465,
+        0.5323625957410992,
+        0.709926314571197,
+        0.7843153211805555,
+        0.8131121927768764,
+        0.6269267065114816,
+        0.7516642011834319,
+        0.7111836734693877,
+        0.7180834427972729,
+        0.799962469506474,
+        0.8062,
+        0.8778395701762653,
+        0.672677935440104,
+        0.7748170388440608,
+        0.48406607700312176
+      ]
+    },
+    "transparency": {
+      "freerider_detection_auc": 1.0,
+      "poisoning_detection_auc": 0.9642857142857143,
+      "contribution_fidelity": 0.8055964653902798,
+      "payment_traceability": 0.31096227692946227,
+      "supply_conservation": 1.0,
+      "metadata_completeness": 1.0,
+      "audit_capability_index": 0.8408550284818618,
+      "updates_visible": true
+    },
+    "ledger": {
+      "n_transactions": 6000,
+      "n_addresses": 41387,
+      "n_entities": 180,
+      "n_coinjoin": 3268,
+      "addresses_per_entity": 229.92777777777778,
+      "total_value": 85699449.157465
+    }
+  },
+  "L3": {
+    "posture": {
+      "level": 3,
+      "name": "+ k-anonymous metadata",
+      "blurb": "FL quasi-identifiers generalised and rare groups suppressed (k=5).",
+      "fresh_address_rate": 0.85,
+      "coinjoin_rate": 0.55,
+      "coinjoin_anonymity_set": 6,
+      "generalise_metadata": true,
+      "suppression_k": 5,
+      "dp_noise_multiplier": 0.0,
+      "dp_count_epsilon": null,
+      "hide_update_metadata": false
+    },
+    "naive_cluster": {
+      "n_addresses": 41809,
+      "n_clusters": 2864,
+      "collapse_ratio": 0.9314980028223588,
+      "purity": 0.17137458441962258,
+      "adjusted_rand": 0.00041845185278075993,
+      "adjusted_mutual_info": 0.1001243961631042,
+      "false_merge_rate": 0.4594972067039106,
+      "entity_recovery_rate": 0.005555555555555556,
+      "largest_cluster_share": 0.5626061374345237,
+      "value_attributed": 0.5991894404503117,
+      "attribution_precision": 0.033707215120151554
+    },
+    "competent_cluster": {
+      "n_addresses": 41809,
+      "n_clusters": 37975,
+      "collapse_ratio": 0.09170274342844842,
+      "purity": 1.0,
+      "adjusted_rand": 0.01888169498673505,
+      "adjusted_mutual_info": 0.08291277609930627,
+      "false_merge_rate": 0.0,
+      "entity_recovery_rate": 0.0,
+      "largest_cluster_share": 0.003205051543925949,
+      "value_attributed": 0.12929488125668695,
+      "attribution_precision": 1.0
+    },
+    "advanced_cluster": {
+      "n_addresses": 41809,
+      "n_clusters": 25498,
+      "collapse_ratio": 0.3901313114401206,
+      "purity": 0.9971776411777369,
+      "adjusted_rand": 0.11780758938879192,
+      "adjusted_mutual_info": 0.3274367439481398,
+      "false_merge_rate": 0.0025884383088869713,
+      "entity_recovery_rate": 0.0,
+      "largest_cluster_share": 0.006721040924202923,
+      "value_attributed": 0.29464659223104467,
+      "attribution_precision": 0.9947483927195655
+    },
+    "linkage": {
+      "n_coinjoins": 3300,
+      "n_attacked": 3300,
+      "n_change_outputs": 19800,
+      "n_uniquely_solved": 8869,
+      "solve_rate": 0.44792929292929295,
+      "inputs_relinked": 12964,
+      "precision": 0.991881835607171
+    },
+    "reidentification": {
+      "n_participants": 83,
+      "published_qis": [
+        "org_size",
+        "volume_band"
+      ],
+      "dropped_qis": [
+        "region",
+        "top_model"
+      ],
+      "reid_declared_only": 0.012048192771084338,
+      "reid_with_timestamps": 0.43373493975903615,
+      "timestamp_uplift": 0.42168674698795183,
+      "k_declared": {
+        "n_records": 83,
+        "min_k": 1.0,
+        "median_k": 24.0,
+        "mean_k": 22.734939759036145,
+        "unique_fraction": 0.012048192771084338,
+        "below_5_fraction": 0.012048192771084338,
+        "anonymity_entropy_bits": 4.395017277009991,
+        "suppression_rate": 0.012048192771084338
+      },
+      "k_combined": {
+        "n_records": 83,
+        "min_k": 1.0,
+        "median_k": 2.0,
+        "mean_k": 1.7469879518072289,
+        "unique_fraction": 0.43373493975903615,
+        "below_5_fraction": 1.0,
+        "anonymity_entropy_bits": 0.6719811748291246,
+        "suppression_rate": 0.012048192771084338
+      },
+      "unicity": {
+        "1": 0.01,
+        "2": 0.04,
+        "3": 0.135,
+        "4": 0.2525,
+        "5": 0.4425
+      }
+    },
+    "membership": {
+      "attack_available": true,
+      "n_clients_attacked": 16,
+      "mean_auc": 0.7073272344058968,
+      "max_auc": 0.8778395701762653,
+      "mean_advantage": 0.41664620918640344,
+      "tpr_at_1pct_fpr": 0.014012738853503185,
+      "global_model_auc": 0.6001932915917256,
+      "per_client_auc": [
+        0.7303086523865745,
+        0.5237895589064465,
+        0.5323625957410992,
+        0.709926314571197,
+        0.7843153211805555,
+        0.8131121927768764,
+        0.6269267065114816,
+        0.7516642011834319,
+        0.7111836734693877,
+        0.7180834427972729,
+        0.799962469506474,
+        0.8062,
+        0.8778395701762653,
+        0.672677935440104,
+        0.7748170388440608,
+        0.48406607700312176
+      ]
+    },
+    "transparency": {
+      "freerider_detection_auc": 1.0,
+      "poisoning_detection_auc": 0.9642857142857143,
+      "contribution_fidelity": 0.8055964653902798,
+      "payment_traceability": 0.2930992240421289,
+      "supply_conservation": 1.0,
+      "metadata_completeness": 0.7469879518072289,
+      "audit_capability_index": 0.7957091783018445,
+      "updates_visible": true
+    },
+    "ledger": {
+      "n_transactions": 6000,
+      "n_addresses": 41809,
+      "n_entities": 180,
+      "n_coinjoin": 3300,
+      "addresses_per_entity": 232.2722222222222,
+      "total_value": 84006622.661075
+    }
+  },
+  "L4": {
+    "posture": {
+      "level": 4,
+      "name": "+ differential privacy",
+      "blurb": "Clipped client updates with Gaussian noise; counts under Laplace.",
+      "fresh_address_rate": 0.85,
+      "coinjoin_rate": 0.55,
+      "coinjoin_anonymity_set": 6,
+      "generalise_metadata": true,
+      "suppression_k": 5,
+      "dp_noise_multiplier": 1.1,
+      "dp_count_epsilon": 0.5,
+      "hide_update_metadata": false
+    },
+    "naive_cluster": {
+      "n_addresses": 41601,
+      "n_clusters": 2886,
+      "collapse_ratio": 0.930626667628182,
+      "purity": 0.16778442825893608,
+      "adjusted_rand": 0.0003459580562240018,
+      "adjusted_mutual_info": 0.09712769183405305,
+      "false_merge_rate": 0.446985446985447,
+      "entity_recovery_rate": 0.005555555555555556,
+      "largest_cluster_share": 0.5696497680344222,
+      "value_attributed": 0.6112662785717854,
+      "attribution_precision": 0.029585585941964747
+    },
+    "competent_cluster": {
+      "n_addresses": 41601,
+      "n_clusters": 37828,
+      "collapse_ratio": 0.0906949352179034,
+      "purity": 1.0,
+      "adjusted_rand": 0.022161104294985245,
+      "adjusted_mutual_info": 0.0849172821066754,
+      "false_merge_rate": 0.0,
+      "entity_recovery_rate": 0.0,
+      "largest_cluster_share": 0.0035335689045936395,
+      "value_attributed": 0.15025163843304498,
+      "attribution_precision": 1.0
+    },
+    "advanced_cluster": {
+      "n_addresses": 41601,
+      "n_clusters": 25456,
+      "collapse_ratio": 0.3880916324126824,
+      "purity": 0.9925482560515372,
+      "adjusted_rand": 0.11433804703409294,
+      "adjusted_mutual_info": 0.3224031171026405,
+      "false_merge_rate": 0.0029855436832181017,
+      "entity_recovery_rate": 0.011111111111111112,
+      "largest_cluster_share": 0.006442152832864595,
+      "value_attributed": 0.3135466575961831,
+      "attribution_precision": 0.9768602706059769
+    },
+    "linkage": {
+      "n_coinjoins": 3288,
+      "n_attacked": 3288,
+      "n_change_outputs": 19728,
+      "n_uniquely_solved": 8862,
+      "solve_rate": 0.4492092457420925,
+      "inputs_relinked": 12867,
+      "precision": 0.9907470097043557
+    },
+    "reidentification": {
+      "n_participants": 83,
+      "published_qis": [
+        "org_size",
+        "volume_band"
+      ],
+      "dropped_qis": [
+        "region",
+        "top_model"
+      ],
+      "reid_declared_only": 0.012048192771084338,
+      "reid_with_timestamps": 0.43373493975903615,
+      "timestamp_uplift": 0.42168674698795183,
+      "k_declared": {
+        "n_records": 83,
+        "min_k": 1.0,
+        "median_k": 24.0,
+        "mean_k": 22.734939759036145,
+        "unique_fraction": 0.012048192771084338,
+        "below_5_fraction": 0.012048192771084338,
+        "anonymity_entropy_bits": 4.395017277009991,
+        "suppression_rate": 0.012048192771084338
+      },
+      "k_combined": {
+        "n_records": 83,
+        "min_k": 1.0,
+        "median_k": 2.0,
+        "mean_k": 1.7469879518072289,
+        "unique_fraction": 0.43373493975903615,
+        "below_5_fraction": 1.0,
+        "anonymity_entropy_bits": 0.6719811748291246,
+        "suppression_rate": 0.012048192771084338
+      },
+      "unicity": {
+        "1": 0.01,
+        "2": 0.0425,
+        "3": 0.1175,
+        "4": 0.24,
+        "5": 0.46
+      }
+    },
+    "membership": {
+      "attack_available": true,
+      "n_clients_attacked": 16,
+      "mean_auc": 0.5308144762993643,
+      "max_auc": 0.5909176205667104,
+      "mean_advantage": 0.0739759234043193,
+      "tpr_at_1pct_fpr": 0.011216216216216214,
+      "global_model_auc": 0.523060029480574,
+      "per_client_auc": [
+        0.4511722044189576,
+        0.5233847532854313,
+        0.510394747916842,
+        0.5153736352764168,
+        0.5572916666666666,
+        0.5365663121206657,
+        0.5085647287597587,
+        0.5657359467455622,
+        0.5446857142857143,
+        0.5770209128250037,
+        0.5082567085757177,
+        0.5834999999999999,
+        0.5238005467056274,
+        0.5463140935044377,
+        0.5909176205667104,
+        0.45005202913631637
+      ]
+    },
+    "transparency": {
+      "freerider_detection_auc": 1.0,
+      "poisoning_detection_auc": 0.5,
+      "contribution_fidelity": 0.6740252008725229,
+      "payment_traceability": 0.306291272787007,
+      "supply_conservation": 1.0,
+      "metadata_completeness": 0.7469879518072289,
+      "audit_capability_index": 0.6212174042444598,
+      "updates_visible": true
+    },
+    "ledger": {
+      "n_transactions": 6000,
+      "n_addresses": 41601,
+      "n_entities": 180,
+      "n_coinjoin": 3288,
+      "addresses_per_entity": 231.11666666666667,
+      "total_value": 86960683.069772
+    }
+  },
+  "L5": {
+    "posture": {
+      "level": 5,
+      "name": "+ zero-knowledge",
+      "blurb": "Only commitments and validity proofs on chain; no per-client stats.",
+      "fresh_address_rate": 0.95,
+      "coinjoin_rate": 0.75,
+      "coinjoin_anonymity_set": 10,
+      "generalise_metadata": true,
+      "suppression_k": 5,
+      "dp_noise_multiplier": 1.1,
+      "dp_count_epsilon": 0.5,
+      "hide_update_metadata": true
+    },
+    "naive_cluster": {
+      "n_addresses": 91295,
+      "n_clusters": 4175,
+      "collapse_ratio": 0.9542691275535352,
+      "purity": 0.1404019935374336,
+      "adjusted_rand": 0.0004146604101049561,
+      "adjusted_mutual_info": 0.11854121646508346,
+      "false_merge_rate": 0.6982035928143713,
+      "entity_recovery_rate": 0.0,
+      "largest_cluster_share": 0.333786078098472,
+      "value_attributed": 0.36368785349836025,
+      "attribution_precision": 0.022446331815417334
+    },
+    "competent_cluster": {
+      "n_addresses": 91295,
+      "n_clusters": 89045,
+      "collapse_ratio": 0.024645380360370228,
+      "purity": 1.0,
+      "adjusted_rand": 0.0013178355388126213,
+      "adjusted_mutual_info": 0.01740525468362797,
+      "false_merge_rate": 0.0,
+      "entity_recovery_rate": 0.0,
+      "largest_cluster_share": 0.0010186757215619694,
+      "value_attributed": 0.031847294838661395,
+      "attribution_precision": 1.0
+    },
+    "advanced_cluster": {
+      "n_addresses": 91295,
+      "n_clusters": 71908,
+      "collapse_ratio": 0.21235555068733225,
+      "purity": 0.9972068568924913,
+      "adjusted_rand": 0.01050624418201103,
+      "adjusted_mutual_info": 0.12766501410035225,
+      "false_merge_rate": 0.0018217722645602714,
+      "entity_recovery_rate": 0.0,
+      "largest_cluster_share": 0.0021468864669478066,
+      "value_attributed": 0.08609809515284095,
+      "attribution_precision": 0.9946325234869183
+    },
+    "linkage": {
+      "n_coinjoins": 4490,
+      "n_attacked": 4490,
+      "n_change_outputs": 44900,
+      "n_uniquely_solved": 13634,
+      "solve_rate": 0.303652561247216,
+      "inputs_relinked": 17280,
+      "precision": 0.9898782455625642
+    },
+    "reidentification": {
+      "n_participants": 83,
+      "published_qis": [
+        "org_size",
+        "volume_band"
+      ],
+      "dropped_qis": [
+        "region",
+        "top_model"
+      ],
+      "reid_declared_only": 0.012048192771084338,
+      "reid_with_timestamps": 0.43373493975903615,
+      "timestamp_uplift": 0.42168674698795183,
+      "k_declared": {
+        "n_records": 83,
+        "min_k": 1.0,
+        "median_k": 24.0,
+        "mean_k": 22.734939759036145,
+        "unique_fraction": 0.012048192771084338,
+        "below_5_fraction": 0.012048192771084338,
+        "anonymity_entropy_bits": 4.395017277009991,
+        "suppression_rate": 0.012048192771084338
+      },
+      "k_combined": {
+        "n_records": 83,
+        "min_k": 1.0,
+        "median_k": 2.0,
+        "mean_k": 1.7469879518072289,
+        "unique_fraction": 0.43373493975903615,
+        "below_5_fraction": 1.0,
+        "anonymity_entropy_bits": 0.6719811748291246,
+        "suppression_rate": 0.012048192771084338
+      },
+      "unicity": {
+        "1": 0.0075,
+        "2": 0.0675,
+        "3": 0.1275,
+        "4": 0.255,
+        "5": 0.4475
+      }
+    },
+    "membership": {
+      "attack_available": false,
+      "n_clients_attacked": 0,
+      "mean_auc": 0.5,
+      "max_auc": 0.5,
+      "mean_advantage": 0.0,
+      "tpr_at_1pct_fpr": 0.01,
+      "global_model_auc": 0.5371139690138432,
+      "per_client_auc": []
+    },
+    "transparency": {
+      "freerider_detection_auc": 0.5,
+      "poisoning_detection_auc": 0.5,
+      "contribution_fidelity": 0.7108169694791018,
+      "payment_traceability": 0.08563596564928701,
+      "supply_conservation": 1.0,
+      "metadata_completeness": 0.2469879518072289,
+      "audit_capability_index": 0.3405734811559363,
+      "updates_visible": false
+    },
+    "ledger": {
+      "n_transactions": 6000,
+      "n_addresses": 91295,
+      "n_entities": 180,
+      "n_coinjoin": 4490,
+      "addresses_per_entity": 507.19444444444446,
+      "total_value": 178523594.842003
+    }
+  }
+}
